@@ -7,5 +7,13 @@
     <fragment
         android:id="@+id/startFragment"
         android:name="com.example.testproject.fragments.navigationMenu.StartFragment"
-        android:label="StartFragment" />
+        android:label="StartFragment" >
+        <action
+            android:id="@+id/action_startFragment_to_cardCollectionFragment"
+            app:destination="@id/cardCollectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardCollectionFragment"
+        android:name="com.example.testproject.fragments.cardCollectionList.CardCollectionFragment"
+        android:label="CardCollectionFragment" />
 </navigation>

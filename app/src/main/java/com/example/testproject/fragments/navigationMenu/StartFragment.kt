@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.testproject.R
 
 class StartFragment : Fragment() {
@@ -29,6 +30,7 @@ class StartFragment : Fragment() {
         mp = MediaPlayer.create(context, R.raw.click)
         button1.setOnClickListener {
             mp.start()
+            findNavController().navigate(R.id.action_startFragment_to_cardCollectionFragment)
         }
     }
 }
