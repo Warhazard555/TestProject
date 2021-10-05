@@ -9,4 +9,6 @@ interface RetrofitInterface {
 
     @GET(value = "93849/ruRU/cards.json")
     fun allCards(): Call<MutableList<CardDto>>
+
+
 }

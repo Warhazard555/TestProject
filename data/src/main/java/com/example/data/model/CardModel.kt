@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class CardModel (
     var cardId: String?,
-    var dbfId: Int?,
+    var id: Int?,
     @SerializedName("name")
     var name: String?,
     var cardSet: String?,

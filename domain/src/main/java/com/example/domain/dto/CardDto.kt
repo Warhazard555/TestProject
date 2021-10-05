@@ -2,7 +2,7 @@ package com.example.domain.dto
 
 class CardDto (
     var cardId: String = "",
-    var dbfId: Int = 0,
+    var id: Int = 0,
     var name: String = "",
     var cardSet: String = "",
     var type: String = "",

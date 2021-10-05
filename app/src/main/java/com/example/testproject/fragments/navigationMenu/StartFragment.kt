@@ -33,4 +33,7 @@ class StartFragment : Fragment() {
             findNavController().navigate(R.id.action_startFragment_to_cardCollectionFragment)
         }
     }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
 }

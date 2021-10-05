@@ -8,7 +8,7 @@ class TransformCardModeltoCardDto : Transformer<List<CardModel>, List<CardDto>> 
             data.map {
                 CardDto(
                     cardId = it.cardId ?: "",
-                    dbfId = it.dbfId ?: 0,
+                    id = it.id ?: 0,
                     name = it.name ?: "",
                     cardSet = it.cardSet ?: "",
                     type = it.type ?: "",
